@@ -1,55 +1,69 @@
-function playGame() {
-
-    let computerSelection = (function() {
-        const choices = ["rock", "paper", "scissors"]
-        let randomNumber = Math.floor(Math.random() * 3);
-        return choices[randomNumber];
-    })();
-    
-    console.log(computerSelection)
-      
-    let playerSelection = (function() {
-        let playerChoice = prompt("Your weapon of choice:", "rock, paper, scissors");
-        return playerChoice.toLowerCase();
-    })();
-    
-    console.log(playerSelection)
-    
-    function playRound(computerSelection, playerSelection) {
-        if((computerSelection === "rock") && (playerSelection === "paper")){
-         return "Player Wins!"   
-        } else if((computerSelection === "paper") && (playerSelection === "scissors")) {
-         return "Player Wins!"   
-        } else if((computerSelection === "scissors") && (playerSelection === "rock")) {
-         return "Player Wins!"   
-        } else if((computerSelection === "rock") && (playerSelection === "scissors")) {
-         return "Computer Wins!"   
-        } else if((computerSelection === "scissors") && (playerSelection === "paper")) {
-         return "Computer Wins!"   
-        } else if((computerSelection === "paper") && (playerSelection === "rock")) {
-         return "Computer Wins!"   
-        } else if((computerSelection === "rock") && (playerSelection === "rock")) {
-         return "It is a Draw!"   
-        } else if((computerSelection === "paper") && (playerSelection === "paper")) {
-         return "It is a Draw!"   
-        } else if((computerSelection === "scissors") && (playerSelection === "scissors")) {
-         return "It is a Draw!"   
-        } else {
+function playRound(playerSelection, computerSelection) {
+    if((playerSelection === "rock" && computerSelection === "paper") ||
+    (playerSelection === "paper" && computerSelection === "scissors") ||
+    (playerSelection === "scissors" && computerSelection === "rock")){
+        return "Computer Wins!"
+    }
+    else if((playerSelection === "rock" && computerSelection === "scissors") ||
+    (playerSelection === "paper" && computerSelection === "rock") ||
+    (playerSelection === "scissors" && computerSelection === "paper")){
+        return "Player Wins!"
+    }
+    else if((playerSelection === "rock" && computerSelection === "rock") ||
+    (playerSelection === "paper" && computerSelection === "paper") ||
+    (playerSelection === "scissors" && computerSelection === "scissors")){
+        return "It is a draw!"
+    } else {
         return "Something went wrong!"
-        }                 
+    }
+}
+
+
+let playerScore = 0;
+let computerScore = 0;
+
+function keepScore() {
+    if(roundResult === "Computer Wins!"){
+        computerScore++
+    } else if(roundResult === "Player Wins!"){
+        playerScore++
+    }
+}
+
+for (let rounds = 0; rounds < 5; rounds++) {
+    function player() {
+        let playerChoice = prompt("Your weapon of choice:", "rock, paper, or scissors").toLowerCase();
+        return playerChoice;
     }
     
-    console.log(playRound(computerSelection, playerSelection))
+    let pChoice = player();
+    console.log(pChoice);
     
+    function computer() {
+        const choices = ["rock", "paper", "scissors"]
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
+        return computerChoice;
     }
     
-    
-    
-    
-        for (let rounds = 0; rounds < 5; rounds++) {
-            console.log(playGame());
-        }
-    
-    
-    
-      
+    let cChoice = computer();
+    console.log(cChoice);
+
+    playRound(pChoice, cChoice)
+    roundResult = playRound(pChoice, cChoice);
+    console.log(roundResult)
+    keepScore()
+    console.log(`Player Score is: ${playerScore}`)
+    console.log(`Computer Score is:${computerScore}`)
+}
+
+function finalScore() {
+    if(playerScore === computerScore){
+        console.log("The final result is a Draw!")
+    } else if(playerScore > computerScore){
+        console.log("The winner of the game is: Player!")
+    } else if(playerScore < computerScore){
+        console.log("The winner of the game is: Computer!")
+    }
+}
+
+finalScore()
