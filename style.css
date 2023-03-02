@@ -1,0 +1,103 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #6EB19B;
+}
+
+.show-choice {
+    background-color: #D6E5E0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.choice-text {
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.show-round {
+    background-color: #D6E5E0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.round-text {
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px 20px 0px;
+}
+
+.choice {
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.fight-button {
+    padding: 10px 20px;
+    background-color: #EFC18B;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.show-scores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E6558;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.player-score {
+    display: inline-block;
+    margin: 5px 0px 2px 5px;
+    background-color: #D6E5E0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.computer-score {
+    display: inline-block;
+    margin: 5px 0px 2px 5px;
+    background-color: #D6E5E0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.show-result {
+    margin-top: 50px;
+    background-color: #D6E5E0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.result-text {
+    font-weight: bolder;
+    margin-left: 10px;
+}

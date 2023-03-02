@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODIN Rock Paper Scissors</title>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="show-choice">
+            <p>Your Weapon of Choice:<span class="choice-text">None</span></p>
+        </div>
+
+        <div class="buttons">
+            <div class="choice-buttons">
+                <button class="choice" value="rock">Rock</button>
+                <button class="choice" value="paper">Paper</button>
+                <button class="choice" value="scissors">Scissors</button>
+            </div>
+            <div class="fight">
+                <button class="fight-button" onclick="playRound(pChoice, cChoice)">Fight</button>
+            </div>
+        </div>
+
+        <div class="show-round">
+            <p>Result of this Round:<span class="round-text">None</span></p>
+        </div>
+
+        <div class="show-scores">
+            <p>Player:<span class="player-score">0</span></p>
+            <p>Computer:<span class="computer-score">0</span></p>
+        </div>
+
+        <div class="show-result">
+            <p>Result of the Game:<span class="result-text">None</span></p>
+        </div>
+    </div>
+
 </body>
 </html>
