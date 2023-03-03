@@ -1,0 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    background-color: #E4C28E;
+    background-image: url(img/fantasy-bg.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    border-radius: 20px;
+    border: 5px solid #71501E;
+    box-shadow: inset 0px 0px 15px 5px #000000;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    padding: 10px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+}
+
+.c-character {
+    height: 150px;
+    width: auto;
+}
+
+.computer-choice {
+    background-color: #ffffff;
+    height: 100px;
+    width: 150px;
+
+}
+
+.explosion {
+    height: 150px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+}
+
+.p-character {
+    height: 150px;
+    width: auto;
+}
+
+.player-choice {
+    background-color: #ffffff;
+    height: 100px;
+    width: 150px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.battle-effect {
+    height: 150px;
+}
+
+.rps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100px;
+}
+
+.rock {
+    background-color: #ffffff;
+}
+
+.paper {
+    background-color: #ffffff;
+}
+
+.scissors {
+    background-color: #ffffff;
+}
+
+.computer-score {
+    background-color: #ffffff;
+}
+
+.round-result {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.player-score {
+    background-color: #ffffff;
+}
+
+.game-result {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.play-again {
+    background-color: #ffffff;
+}
