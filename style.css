@@ -2,102 +2,265 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.main-container {
+    background-color: #000000;
+    background-image: url(img/prism.png);
+    background-repeat: repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 400px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background-color: #6EB19B;
-}
-
-.show-choice {
-    background-color: #D6E5E0;
-    padding: 10px 20px;
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    background-color: #E4C28E;
+    background-image: url(img/fantasy-bg.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 1000px;
     border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: inset 0px 0px 15px 5px #000000;
 }
 
-.choice-text {
-    margin-left: 10px;
-    font-weight: bolder;
+.top {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    padding: 10px;
 }
 
-.show-round {
-    background-color: #D6E5E0;
-    padding: 10px 20px;
+.middle {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.logo {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+}
+
+.c-character {
+    height: 150px;
+    width: auto;
+}
+
+.computer-choice {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
     border-radius: 20px;
+    border: 5px solid #7C0000;
+    box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.round-text {
-    margin-left: 10px;
-    font-weight: bolder;
+.explosion {
+    height: 150px;
 }
 
-.buttons {
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+}
+
+.p-character {
+    height: 150px;
+    width: auto;
+}
+
+.player-choice {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #004D7C;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.fight {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.choice-buttons {
-    display: flex;
-    gap: 10px;
-    padding: 20px 0px 20px 0px;
-}
-
-.choice {
-    padding: 10px 20px;
-    border-style: none;
-    border-radius: 20px;
-    cursor: pointer;
+    height: 150px;
+    margin-bottom: 50px;
 }
 
 .fight-button {
-    padding: 10px 20px;
-    background-color: #EFC18B;
-    border-style: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
     border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
     cursor: pointer;
 }
 
-.show-scores {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #3E6558;
-    margin-top: 20px;
-    padding: 10px 20px;
+.choice-img {
+    height: 60px;
+    width: auto;
 }
 
-.player-score {
-    display: inline-block;
-    margin: 5px 0px 2px 5px;
-    background-color: #D6E5E0;
-    padding: 10px 20px;
+.rps {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100px;
+}
+
+#rock {
+    background-color: #E4C28E;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
     border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
+    cursor: pointer;
+}
+
+#paper {
+    background-color: #E4C28E;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
+    cursor: pointer;
+}
+
+#scissors {
+    background-color: #E4C28E;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
+    cursor: pointer;
 }
 
 .computer-score {
-    display: inline-block;
-    margin: 5px 0px 2px 5px;
-    background-color: #D6E5E0;
-    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
     border-radius: 20px;
+    border: 5px solid #7C0000;
+    box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.show-result {
-    margin-top: 50px;
-    background-color: #D6E5E0;
-    padding: 10px 20px;
+.round-result {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    flex: 1;
+    background-color: #E4C28E;
+    height: 100px;
+    padding: 10px;
     border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.result-text {
-    font-weight: bolder;
-    margin-left: 10px;
+.player-score {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #004D7C;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.game-result {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    flex: 1;
+    background-color: #E4C28E;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.play-again {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #E4C28E;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #190B00;
+    box-shadow: 0px 0px 10px 0px #000000;
+    cursor: pointer;
 }
