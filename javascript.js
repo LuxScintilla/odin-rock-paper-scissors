@@ -1,3 +1,5 @@
+// MOVING BACKGROUND
+
 const backGround = document.querySelector(".container");
 
 backGround.addEventListener("mousemove", moveBG);
@@ -8,6 +10,8 @@ function moveBG(e) {
     backGround.style.backgroundPositionY = (e.clientY/20-100)+"px";
 
 }
+
+// START OF GAME FUNCTION CODE
 
 const choiceButtons = document.querySelectorAll(".choice");
 const pChoiceText = document.querySelector(".player-choice");
@@ -102,6 +106,8 @@ function buttonCount () {
 
     if(buttonPressed === 5) {
         finalScore()
+        fightButton.disabled = true;
+        fightButton.style.backgroundColor = "#aaaaaa";
     }
 }
 
@@ -109,9 +115,9 @@ function finalScore() {
     if(playerScore === computerScore){
         gameResultText.textContent = "The final result is a Draw!"
     } else if(playerScore > computerScore){
-        gameResultText.textContent = "The winner of the game is: Player!"
+        gameResultText.textContent = "The winner is Player!"
     } else if(playerScore < computerScore){
-        gameResultText.textContent = "The winner of the game is: Computer!"
+        gameResultText.textContent = "The winner is Computer!"
     }
 }
 
@@ -127,5 +133,7 @@ function reset() {
     playerScore = 0;
     computerScore = 0;
     buttonPressed = 0;
+    fightButton.disabled = false;
+    fightButton.style.backgroundColor = "#E4C28E";
 }
 

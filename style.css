@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     /* border: 1px solid red; */
+    font-family: 'Rubik Iso', cursive;
 }
 
 .main-container {
@@ -20,7 +21,7 @@
     flex-direction: column;
     width: 800px;
     height: 600px;
-    padding: 50px;
+    padding: 5px 50px 5px 50px;
     background-color: #E4C28E;
     background-image: url(img/fantasy-bg.png);
     background-position: 0px 0px;
@@ -29,6 +30,34 @@
     border-radius: 20px;
     border: 5px solid #190B00;
     box-shadow: inset 0px 0px 15px 5px #000000;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 10s linear infinite;
+    text-shadow: 0px 2px #000000;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 
 .top {
@@ -83,10 +112,10 @@
     width: auto;
 }
 
-.computer-choice {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.computer-choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E4C28E;
     height: 100px;
     width: 150px;
@@ -96,8 +125,9 @@
     box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.explosion {
-    height: 150px;
+.computer-choice {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .player {
@@ -113,10 +143,10 @@
     width: auto;
 }
 
-.player-choice {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.player-choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E4C28E;
     height: 100px;
     width: 150px;
@@ -124,6 +154,11 @@
     border-radius: 20px;
     border: 5px solid #004D7C;
     box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.player-choice {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .choices {
@@ -199,10 +234,10 @@
     cursor: pointer;
 }
 
-.computer-score {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.computer-score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E4C28E;
     height: 100px;
     width: 150px;
@@ -212,10 +247,15 @@
     box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.round-result {
-    text-align: center;
+.computer-score {
     font-size: 30px;
     font-weight: bold;
+}
+
+.round-result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     background-color: #E4C28E;
     height: 100px;
@@ -225,10 +265,15 @@
     box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.player-score {
-    text-align: center;
+.round-result {
     font-size: 30px;
     font-weight: bold;
+}
+
+.player-score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E4C28E;
     height: 100px;
     width: 150px;
@@ -238,10 +283,15 @@
     box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.game-result {
-    text-align: center;
+.player-score {
     font-size: 30px;
     font-weight: bold;
+}
+
+.game-result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     background-color: #E4C28E;
     height: 100px;
@@ -249,6 +299,11 @@
     border-radius: 20px;
     border: 5px solid #190B00;
     box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.game-result {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .play-again {

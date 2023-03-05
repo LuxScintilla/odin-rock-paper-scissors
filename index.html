@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic RPS Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
 </head>
@@ -14,11 +17,16 @@
 
         <div class="container">
 
+            <div class="title-container">
+                <p class="title">Magic Rock Paper Scissors</p>
+            </div>
 
             <div class="top">
                 <div class="computer">
-                    <img class="c-character" src="img/computer.png">
-                    <p class="computer-choice"></p>
+                    <img class="p-character" src="img/computer.png">
+                    <div class="computer-choice-container">
+                        <p class="computer-choice"></p>
+                    </div>
                 </div>
                 <div class="choices">
                     <div class="fight">
@@ -32,27 +40,29 @@
                 </div>
                 <div class="player">
                     <img class="p-character" src="img/player.png">
-                    <p class="player-choice"></p>
+                    <div class="player-choice-container">
+                        <p class="player-choice"></p>
+                    </div>
                 </div>
             </div>
 
 
             <div class="middle">
-                <div class="computer-score">
-                    <p>0</p>
+                <div class="computer-score-container">
+                    <p class="computer-score">0</p>
                 </div>
-                <div class="round-result">
-                    <p>Round Result</p>
+                <div class="round-result-container">
+                    <p class="round-result">Round Result</p>
                 </div>
-                <div class="player-score">
-                    <p>0</p>
+                <div class="player-score-container">
+                    <p class="player-score">0</p>
                 </div>
             </div>
 
 
             <div class="bottom">
-                <div class="game-result">
-                    <p>Game Result</p>
+                <div class="game-result-container">
+                    <p class="game-result">Game Result</p>
                 </div>
                 <button class="play-again">Play Again</button>
             </div>
